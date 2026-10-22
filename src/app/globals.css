@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. Brand palette (Adbyrd brand guide):
+ *   ocean  #1F70A6  primary actions, links, focus
+ *   navy   #1A4B7C  headings, app chrome
+ *   green  #2D8C55  on time / success
+ *   slate  #4A4D4E  body text
+ * Amber and red are semantic deadline states only, never decoration.
+ */
+@theme {
+  --font-sans: "Public Sans Variable", "Public Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ocean-50: #eef5fb;
+  --color-ocean-100: #d6e7f4;
+  --color-ocean-600: #1f70a6;
+  --color-ocean-700: #195d8a;
+
+  --color-navy-50: #edf2f8;
+  --color-navy-700: #1a4b7c;
+  --color-navy-900: #10304f;
+
+  --color-green-50: #ebf6ef;
+  --color-green-600: #2d8c55;
+  --color-green-700: #236e43;
+
+  --color-slate-ink: #4a4d4e;
+  --color-slate-soft: #6b7072;
+
+  --color-paper: #f4f7fa;
+  --color-rule: #d7e0e8;
+  --color-rule-strong: #b9c6d2;
+  --color-closed: #e6ebf0;
+
+  --color-amber-50: #fdf5e7;
+  --color-amber-700: #94570a;
+  --color-red-50: #fdeeec;
+  --color-red-700: #a5281c;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-slate-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "tnum" 1;
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-navy-700);
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-ocean-600);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: var(--color-ocean-100);
+  }
+}
+
+@layer components {
+  /* Diagonal hatch used for legal holidays on the deadline rail. */
+  .rail-holiday {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--color-closed) 0 6px,
+      #f7f9fb 6px 12px
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
