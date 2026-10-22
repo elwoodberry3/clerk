@@ -451,16 +451,16 @@ approves.**
 
 ## Documentation index
 
-| Document                                                         | Read when                                            |
-| ---------------------------------------------------------------- | ---------------------------------------------------- |
-| [`docs/architecture.md`](docs/architecture.md)                   | You need the big picture or the production target    |
-| [`docs/rules-packs.md`](docs/rules-packs.md)                     | You are touching legal logic                         |
-| [`docs/onboarding-a-township.md`](docs/onboarding-a-township.md) | You are adding a demo or client                      |
-| [`docs/demo-playbook.md`](docs/demo-playbook.md)                 | You are about to show the Cooper demo                |
-| [`docs/security.md`](docs/security.md)                           | You are reviewing controls or planning production    |
-| [`docs/adr/`](docs/adr)                                          | You want the reasoning behind a design decision      |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md)                             | Before your first pull request                       |
-| [`CHANGELOG.md`](CHANGELOG.md)                                   | You need what changed, including rules-pack versions |
+| Document                                                                  | Read when                                            |
+| ------------------------------------------------------------------------- | ---------------------------------------------------- |
+| [`docs/architecture.md`](./assets/docx/architecture.md)                   | You need the big picture or the production target    |
+| [`docs/rules-packs.md`](./assets/docx/rules-packs.md)                     | You are touching legal logic                         |
+| [`docs/onboarding-a-township.md`](./assets/docx/onboarding-a-township.md) | You are adding a demo or client                      |
+| [`docs/demo-playbook.md`](./assets/docx/demo-playbook.md)                 | You are about to show the Cooper demo                |
+| [`docs/security.md`](./assets/docx/security.md)                           | You are reviewing controls or planning production    |
+| [`docs/adr/`](./assets/docx/adr)                                          | You want the reasoning behind a design decision      |
+| [`CONTRIBUTING.md`](./clerk/CONTRIBUTING.md)                              | Before your first pull request                       |
+| [`CHANGELOG.md`](./clerk/CHANGELOG.md)                                    | You need what changed, including rules-pack versions |
 
 ---
 
